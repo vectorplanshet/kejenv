@@ -335,16 +335,18 @@ input[type="text"]:focus {
       border: none;
       cursor: pointer;
     }
-        #overlay {
+    .overlay {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 9999;
     width: 100%;
     height: 100%;
+    background: rgba(255, 0, 0, 0.2);  /* Ярко-красный полупрозрачный фон для теста */
     background: url('kod.png') center/cover no-repeat;
     pointer-events: none; /* Позволяет кликам проходить сквозь */
-    z-index: 100; /* Поверх карты */
-    opacity: 0.2; /* Сделать картинку менее прозрачной */
+    z-index: 2000; /* Поверх карты */
+    opacity: 0.1; /* Сделать картинку менее прозрачной */
     transition: filter 0.3s ease; /* Плавный переход фильтра */
 }
 /* Кастомизация всплывающего окна */
@@ -545,8 +547,8 @@ height: 25px;
     </div>
     <div id="leaflet-control-layers"></div>
     </div>
-    <div id="map"></div>
     <div class="overlay"></div>
+    <div id="map"></div>
 <!-- Модальное окно для отображения координат -->
   <!-- Меню в правом нижнем углу -->
   <div class="custom-menu">
