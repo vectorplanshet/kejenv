@@ -653,7 +653,7 @@ height: 25px;
             <input type="checkbox" id="Черновицкая область"><label for="Черновицкая область">Черновицкая область</label>
         </div>
         <div>
-            <input type="checkbox" id="Херсонская область"><label for="Днепропетровская область">Херсонская область</label>
+            <input type="checkbox" id="Херсонская область"><label for="Херсонская область">Херсонская область</label>
         </div>
         <div>
             <input type="checkbox" id="А.Р Крым"><label for="А.Р Крым">А.Р Крым</label>
@@ -1408,7 +1408,7 @@ fetch('trevoga.json')
         });
 
         // Автоматически активируем "Луганская область" и "А. Р Крым"
-        const autoActivateRegions = ["Луганская область", "А.Р Крым"];
+        const autoActivateRegions = ["Луганская область"];
         
         document.querySelectorAll('#alert-menu input[type=checkbox]').forEach(checkbox => {
             checkbox.onchange = function() {
